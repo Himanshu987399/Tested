@@ -145,6 +145,7 @@
     <!-- Salesforce Embedded Messaging Script -->
     <script type='text/javascript'>
         function initEmbeddedMessaging() {
+		console.log('Hereh');
             try {
                 embeddedservice_bootstrap.settings.language = 'en_US';
                 embeddedservice_bootstrap.init(
@@ -155,7 +156,8 @@
                         scrt2URL: 'https://cl1733813315353.my.salesforce-scrt.com'
                     }
                 );
-				cons
+				                console.log('Success');
+
             } catch (err) {
                 console.error('Error loading Embedded Messaging: ', err);
             }
