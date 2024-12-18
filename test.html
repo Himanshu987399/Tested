@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Library Hub - Powered by Salesforce</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <style>
+    <script type='text/javascript' src='https://cl1733813315353.my.site.com/ESWWebDeployment1734500424017/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+	<style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
         
         body {
@@ -47,7 +47,6 @@
         <!-- Header -->
         <header class="flex justify-between items-center mb-12">
             <div class="flex items-center">
-                <i data-feather="book" class="text-indigo-600 mr-3 w-10 h-10"></i>
                 <h1 class="text-3xl font-bold gradient-text">Digital Library Hub</h1>
             </div>
             <nav class="flex space-x-6">
@@ -124,17 +123,14 @@
         <!-- Quick Actions -->
         <section class="grid md:grid-cols-3 gap-6 mb-16">
             <div class="bg-white p-6 rounded-xl shadow-md card-hover">
-                <i data-feather="book-open" class="w-12 h-12 text-green-500 mb-4"></i>
                 <h3 class="text-xl font-semibold mb-2">Digital Collection</h3>
                 <p class="text-gray-600">Access 50,000+ digital books across multiple genres and categories.</p>
             </div>
             <div class="bg-white p-6 rounded-xl shadow-md card-hover">
-                <i data-feather="users" class="w-12 h-12 text-blue-500 mb-4"></i>
                 <h3 class="text-xl font-semibold mb-2">Community</h3>
                 <p class="text-gray-600">Connect with readers, join book clubs, and share recommendations.</p>
             </div>
             <div class="bg-white p-6 rounded-xl shadow-md card-hover">
-                <i data-feather="clock" class="w-12 h-12 text-purple-500 mb-4"></i>
                 <h3 class="text-xl font-semibold mb-2">24/7 Access</h3>
                 <p class="text-gray-600">Read anytime, anywhere with our seamless digital library platform.</p>
             </div>
@@ -149,7 +145,6 @@
     <!-- Salesforce Embedded Messaging Script -->
     <script type='text/javascript'>
         function initEmbeddedMessaging() {
-		console.log('hereh');
             try {
                 embeddedservice_bootstrap.settings.language = 'en_US';
                 embeddedservice_bootstrap.init(
@@ -160,27 +155,11 @@
                         scrt2URL: 'https://cl1733813315353.my.salesforce-scrt.com'
                     }
                 );
-				console.log('sucess');
+				cons
             } catch (err) {
                 console.error('Error loading Embedded Messaging: ', err);
             }
         }
-    </script>
-    <script type='text/javascript' src='https://cl1733813315353.my.site.com/ESWWebDeployment1734500424017/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-
-    <script>
-        // Initialize Feather Icons
-        feather.replace();
-
-        // Salesforce AgentForce Login Simulation
-        function openSalesforceLogin() {
-            alert('Redirecting to Salesforce AgentForce Login\n\nNote: This is a simulation. In a real implementation, this would trigger actual Salesforce authentication.');
-        }
-
-        // Optional: Simple search functionality
-        document.querySelector('button:nth-child(2)').addEventListener('click', function() {
-            alert('Search functionality coming soon!');
-        });
     </script>
 </body>
 </html>
